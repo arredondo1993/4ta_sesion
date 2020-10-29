@@ -1,0 +1,6 @@
+getwd()
+library(openxlsx)
+data(iris)
+dir.create("script")
+dir.create("data")
+write.xlsx(iris,"data/iris.xlsx", row.names=F)
